@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page VPN Member</title>
+    <style>
+        :root {
+            --primary: #1976d2;
+            --secondary: #fff;
+            --accent: #1565c0;
+            --text: #222;
+            --bg: #f5faff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #bbdefb;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        .feature {
+            background: var(--secondary);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+            padding: 2rem 1.5rem;
+            flex: 1 1 250px;
+            max-width: 320px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .feature:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+        }
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        .testimonials {
+            background: var(--primary);
+            color: var(--secondary);
+            border-radius: 10px;
+            padding: 2rem 1rem;
+            margin-bottom: 3rem;
+        }
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .testimonial {
+            background: var(--secondary);
+            color: var(--primary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            max-width: 320px;
+            flex: 1 1 250px;
+            box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
+            text-align: center;
+            position: relative;
+        }
+        .testimonial:before {
+            content: "“";
+            font-size: 2.5rem;
+            color: var(--accent);
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            opacity: 0.2;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .testimonial .author {
+            font-weight: bold;
+            color: var(--accent);
+        }
+        footer {
+            background: var(--accent);
+            color: var(--secondary);
+            text-align: center;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .features, .testimonial-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+            .feature, .testimonial {
+                padding: 1.2rem;
+            }
+            .container {
+                padding: 1rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VPN Member</h1>
+        <p>Akses internet aman, cepat, dan tanpa batas di mana saja!</p>
+        <nav>
+            <a href="#features">Fitur</a>
+            <a href="#testimonials">Testimonial</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="features">
+            <h2 style="text-align:center; color:var(--primary); margin-bottom:2rem;">Fitur Unggulan</h2>
+            <div class="features">
+                <div class="feature">
+                    <i>🔒</i>
+                    <h3>Keamanan Tinggi</h3>
+                    <p>Data Anda terenkripsi dengan standar keamanan terbaik untuk menjaga privasi online Anda.</p>
+                </div>
+                <div class="feature">
+                    <i>⚡</i>
+                    <h3>Koneksi Cepat</h3>
+                    <p>Server berkecepatan tinggi memastikan pengalaman internet tanpa buffering dan lag.</p>
+                </div>
+                <div class="feature">
+                    <i>🌍</i>
+                    <h3>Akses Global</h3>
+                    <p>Buka blokir situs favorit Anda dari mana saja di seluruh dunia tanpa batasan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Apa Kata Mereka?</h2>
+            <div class="testimonial-list" id="testimonial-list">
+                <!-- Testimonial akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact" style="text-align:center;">
+            <h2 style="color:var(--primary); margin-bottom:1rem;">Hubungi Kami</h2>
+            <p>Ingin mencoba layanan kami? <a href="mailto:info@vpnmember.com" style="color:var(--accent);text-decoration:underline;">Kirim Email</a> atau hubungi WhatsApp: <a href="https://wa.me/6281234567890" style="color:var(--accent);text-decoration:underline;">+62 812-3456-7890</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 VPN Member. All rights reserved.
+    </footer>
+
+    <script>
+        // Data testimonial
+        const testimonials = [
+            {
+                text: "VPN Member sangat membantu saya mengakses situs yang diblokir di kantor. Koneksi stabil dan cepat!",
+                author: "Andi, Jakarta"
+            },
+            {
+                text: "Privasi saya terjaga dan tidak pernah ada masalah. Supportnya juga responsif.",
+                author: "Siti, Bandung"
+            },
+            {
+                text: "Harga terjangkau dan kualitas premium. Sangat direkomendasikan untuk semua orang.",
+                author: "Budi, Surabaya"
+            }
+        ];
+
+        // Render testimonial
+        const testimonialList = document.getElementById('testimonial-list');
+        testimonials.forEach(t => {
+            const div = document.createElement('div');
+            div.className = 'testimonial';
+            div.innerHTML = `<p>${t.text}</p><div class="author">${t.author}</div>`;
+            testimonialList.appendChild(div);
+        });
+    </script>
+</body>
+</html>
