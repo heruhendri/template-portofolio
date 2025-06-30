@@ -1,0 +1,188 @@
+/* style.css - CSS terpisah untuk landing-page.html */
+:root {
+    --primary: #1976d2;
+    --secondary: #fff;
+    --accent: #1565c0;
+    --text: #222;
+    --bg: #f5faff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+header {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    position: relative;
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+nav {
+    margin-top: 0.7rem;
+}
+nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+nav a:hover {
+    color: #bbdefb;
+}
+.main-nav {
+    display: inline-block;
+}
+.login-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    transition: color 0.2s;
+}
+.login-btn:hover {
+    color: #bbdefb;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.2rem 0.7rem;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.feature {
+    background: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(25, 118, 210, 0.06);
+    padding: 1.2rem 1rem;
+    flex: 1 1 220px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.feature:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+}
+.feature i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.7rem;
+    display: block;
+}
+.feature h3 {
+    margin-bottom: 0.3rem;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+.testimonials {
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 1.2rem 0.7rem;
+    margin-bottom: 2rem;
+}
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+}
+.testimonial {
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 260px;
+    flex: 1 1 180px;
+    box-shadow: 0 1px 4px rgba(21, 101, 192, 0.07);
+    text-align: center;
+    position: relative;
+    font-size: 0.97rem;
+}
+.testimonial:before {
+    content: "“";
+    font-size: 2rem;
+    color: var(--accent);
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    opacity: 0.18;
+}
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 0.7rem;
+}
+.testimonial .author {
+    font-weight: bold;
+    color: var(--accent);
+}
+footer {
+    background: var(--accent);
+    color: var(--secondary);
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.97rem;
+    margin-top: 1.2rem;
+}
+@media (max-width: 900px) {
+    .features, .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        padding: 1rem 0.3rem;
+    }
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    .feature, .testimonial {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .container {
+        padding: 0.5rem 0.1rem;
+    }
+    .login-btn {
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.1rem;
+    }
+}
