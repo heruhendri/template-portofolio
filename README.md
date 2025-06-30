@@ -1,64 +1,71 @@
 
 ---
 
-# Template Portofolio
+# Template Portofolio 🚀
 
-![Preview](https://raw.githubusercontent.com/heruhendri/template-portofolio/master/preview.png) <!-- Ganti dengan gambar preview jika ada -->
+Selamat datang di **Template Portofolio**!  
+Repo ini berisi kumpulan template portofolio yang bisa Anda gunakan secara gratis untuk menampilkan karya, pengalaman, dan profil profesional Anda di dunia digital.
 
-## Deskripsi
+## ✨ Fitur Utama
 
-Ini adalah repository berisi template portofolio berbasis HTML yang dapat digunakan secara gratis. Template ini cocok untuk menampilkan karya, pengalaman, dan keahlian Anda secara profesional di web.
+- Desain modern & responsif
+- Mudah dikustomisasi (HTML & CSS)
+- Layout elegan untuk personal branding
+- Siap di-deploy ke GitHub Pages atau hosting mana pun
+- Gratis digunakan untuk keperluan pribadi maupun komersial
 
-## Fitur
+## 📸 Preview
 
-- Desain responsif, dapat diakses di berbagai perangkat (desktop/tablet/mobile)
-- Struktur HTML yang mudah dimodifikasi
-- Komponen portofolio, pengalaman kerja, pendidikan, dan kontak
-- Navigasi sederhana dan user-friendly
-- Gratis digunakan untuk keperluan personal maupun komersial
+![Preview Template](preview.png)  
+*Contoh tampilan utama template portofolio*
 
-## Demo
+## 🚀 Cara Menggunakan
 
-Lihat demo template di sini: [Demo Live](#) <!-- Ganti dengan link demo jika tersedia -->
-
-## Cara Menggunakan
-
-1. **Clone repository ini**
+1. **Clone repo ini:**
    ```bash
    git clone https://github.com/heruhendri/template-portofolio.git
    ```
+2. **Buka folder hasil clone, lalu edit file HTML & CSS sesuai kebutuhan Anda.**
+3. **Upload ke GitHub Pages atau hosting favorit Anda.**
 
-2. **Buka file HTML**
-   Buka file `index.html` di browser Anda untuk melihat tampilan portofolio.
+## 🛠️ Kustomisasi
 
-3. **Edit sesuai kebutuhan**
-   Ubah bagian-bagian seperti nama, deskripsi, pengalaman, dan kontak sesuai profil Anda.
+- Ganti foto profil, nama, dan deskripsi diri di file `index.html`.
+- Sesuaikan warna, font, dan layout di file `style.css`.
+- Tambahkan bagian portofolio, pengalaman, atau kontak sesuai kebutuhan.
 
-## Struktur Folder
+## 📦 Struktur Folder
 
 ```
 template-portofolio/
-├── assets/         # File gambar, icon, atau resource lainnya
-├── css/            # File CSS untuk styling
-├── js/             # (Opsional) File JavaScript jika diperlukan
-├── index.html      # File utama portofolio
-└── README.md       # Dokumentasi ini
+├── index.html
+├── style.css
+├── assets/
+│   ├── img/
+│   └── icons/
+└── README.md
 ```
 
-## Kontribusi
+## 💡 Tips Penggunaan
 
-Kontribusi sangat terbuka! Silakan buat pull request untuk menambahkan fitur atau perbaikan.
+- Gunakan gambar berkualitas tinggi untuk portofolio Anda.
+- Pastikan tautan ke media sosial atau kontak aktif.
+- Update portofolio secara berkala dengan karya terbaru.
 
-## Lisensi
+## 🤝 Kontribusi
 
-Template ini bersifat open-source dan dapat digunakan secara gratis untuk keperluan apapun. Lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+Ingin menambahkan fitur atau desain baru?  
+Silakan fork repo ini, buat perubahan, lalu kirimkan pull request. Setiap kontribusi sangat dihargai!
 
-## Kontak
+## 📄 Lisensi
 
-Jika ada pertanyaan atau ingin diskusi lebih lanjut, hubungi:
-- Email: heruhendri@gmail.com
-- GitHub: [heruhendri](https://github.com/heruhendri)
+Repo ini berlisensi [MIT](LICENSE), bebas digunakan untuk keperluan apapun.
 
 ---
 
-Silakan copy-paste dan edit README ini di repository Anda sesuai kebutuhan. Jika ingin menambahkan badge, gambar, atau link demo, silakan sesuaikan pada bagian terkait.
+Terima kasih telah menggunakan **Template Portofolio**!  
+Jangan lupa kasih bintang ⭐ jika template ini bermanfaat.
+
+---
+
+Jika ingin README dalam bahasa Inggris, atau ada bagian yang ingin dipersonalisasi (misal: sosial media, logo, dsb), silakan beri tahu saya!
